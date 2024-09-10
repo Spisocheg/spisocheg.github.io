@@ -1,0 +1,195 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    color: darkslategray;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 2.3rem;
+    margin: 1rem 0;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+
+p {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+}
+
+video {
+    height: 8rem;
+}
+
+.video_container {    
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+table {
+    display: inline-block;
+}
+
+body>header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkslategray;
+    padding: 0 1rem;
+}
+
+body>header>a {
+    display: block;
+    height: 100%;
+    padding: 0 1.5rem;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+body>header h1 {
+    display: block;
+}
+ 
+body>header nav {
+    display: block;
+    width: 19rem;
+    margin-right: 3rem;
+}
+
+body>header button {
+    display: block;
+    margin-left: auto;
+    font-size: 16px;
+    color: darkslategray;
+    background-color: white;
+    border: 1px solid darkslategray;
+    padding: 0.4rem;
+}
+
+body>header button:hover {
+    color: white;
+    background-color: darkslategray;
+    border: 1px solid white;
+}
+
+body>header .inner_nav {
+    display: none;
+    flex-flow: column;
+    position: absolute;
+    right: 3rem;
+    background-color: darkslategray;
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+body>header .inner_nav>a {
+    display: block;
+    height: 100%;
+    padding: 0.5rem;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+ 
+body>header a:hover {
+    background-color: darkslategrey;
+    color: lightgray;
+}
+
+body>main {
+    display: block;
+    margin: 0 20rem;
+}
+
+body>main section {
+    margin-top: 3rem;
+}
+
+body>main #about td {
+    padding: 0.25rem;
+    padding-left: 0;
+    padding-right: 2rem;
+    font-size: 1.3rem;
+}
+
+/*
+    добавить сюда стили секшна образование
+
+    а еще закрепить на экране шапку страницы
+*/
+
+body>main #education h4 {
+    margin: 0.2rem 0;
+}
+
+body>main #education img {
+    max-height: 5rem;
+    display: inline-block;
+    margin-right: 0.6rem;
+}
+
+body>main #education p {
+    display: inline-block;
+}
+
+body>main #education .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: auto;
+}
+
+body>main #skills>div {
+    margin: 1rem 0;
+}
+
+body>main #skills p {
+    margin-bottom: 0.2rem;
+}
+
+body>main #skills .outer_skills {
+    background-color: lightgray;
+    width: 100%;
+}
+
+body>main #skills .skills {
+    color: white;
+    background-color: darkslategray;
+    padding: 0.4rem;
+}
+
+body>main #skills .python {width: 85%;}
+body>main #skills .cpp {width: 40%;}
+body>main #skills .fe {width: 70%;}
+body>main #skills .be {width: 60%;}
+body>main #skills .cisco {width: 80%;}
+body>main #skills .linux {width: 65%;}
+
+body>footer {
+    background-color: lightgray;
+    padding: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+body>footer p {
+    font-size: 12px;
+    margin: 0.1rem;
+}

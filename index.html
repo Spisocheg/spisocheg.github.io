@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Резюме</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/timeline.css">
+        <link rel="stylesheet" href="./styles/adaptive.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="./index.html">
+                <h1>Резюме</h1>
+            </a>
+            <nav>
+                <button class="open_nav">Разделы</button>
+                <div class="inner_nav">
+                    <a href="#about">Личная информация</a>
+                    <a href="#education">Образование</a>
+                    <a href="#skills">Навыки</a>
+                </div>                
+            </nav>
+        </header>
+        <main>
+            <section id="about">
+                <h3>Личная информация</h3>
+                <hr>
+                <div class="video_container">
+                    <video autoplay loop muted>
+                        <source src="./imgs/video.mp4" type="video/mp4">
+                        <source src="./imgs/video.webm" type="video/webm">
+                    </video>
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Имя:</td>
+                            <td>Арина Яснева</td>
+                        </tr>
+                        <tr>
+                            <td>Пол:</td>
+                            <td>Женский</td>
+                        </tr>
+                        <tr>
+                            <td>Возраст:</td>
+                            <td>20 лет</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="education">
+                <h3>Образование</h3>
+                <hr>
+                <div class="container">
+                    <article class="left_block">
+                        <div class="inner_block">
+                            <h4>2017</h4>
+                            <div class="grid-wrapper">
+                                <img src="./imgs/mshp_logo.jpg"> <!-- ШП лого -->
+                                <p>Non ultricies pharetra platea himenaeos nulla tincidunt rutrum platea. Aenean lobortis eget ultricies odio magna fames potenti varius. Nibh ligula ex porta cursus a.</p>
+                            </div>                            
+                        </div>
+                    </article>
+                    <article class="right_block">
+                        <div class="inner_block">
+                            <h4>2020</h4>
+                            <div class="grid-wrapper">
+                                <img src="./imgs/bmstu_logo.jpg"> <!-- МТКП лого -->
+                                <p>Finibus potenti senectus imperdiet ad pellentesque auctor ultricies inceptos. Mus nascetur dui leo magnis mi. Vel ac parturient adipiscing a purus metus habitasse elementum. Commodo consequat facilisi suscipit dignissim ad purus, nisi consequat.</p>
+                            </div>                            
+                        </div>
+                    </article>
+                    <article class="left_block">
+                        <div class="inner_block">
+                            <h4>2022</h4>
+                            <div class="grid-wrapper">
+                                <img src="./imgs/sf_logo.jpg"> <!-- СФ лого -->
+                                <p>Magnis natoque netus; fames condimentum condimentum primis ut. Nascetur sapien feugiat porta magna vulputate. Vel justo magna montes ultricies velit posuere netus sapien. Potenti ridiculus viverra eros aliquam consectetur nulla facilisis.</p>
+                            </div>                            
+                        </div>
+                    </article>
+                </div>                
+            </section>
+            <section id="skills">
+                <h3>Навыки</h3>
+                <hr>
+                <div>
+                    <p>Python</p>
+                    <div class="outer_skills">
+                        <div class="skills python">85%</div>
+                    </div>
+                </div>
+                <div>
+                    <p>C++</p>
+                    <div class="outer_skills">
+                        <div class="skills cpp">40%</div>
+                    </div>
+                </div>
+                <div>
+                    <p>Front-end</p>
+                    <div class="outer_skills">
+                        <div class="skills fe">70%</div>
+                    </div>
+                </div>
+                <div>
+                    <p>Back-end</p>
+                    <div class="outer_skills">
+                        <div class="skills be">60%</div>
+                    </div>
+                </div>
+                <div>
+                    <p>Cisco</p>
+                    <div class="outer_skills">
+                        <div class="skills cisco">80%</div>
+                    </div>
+                </div>
+                <div>
+                    <p>Linux</p>
+                    <div class="outer_skills">
+                        <div class="skills linux">65%</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Author: https://github.com/Spisocheg</p>
+            <p>2024</p>
+        </footer>
+    </body>
+
+    <script>
+"use strict";
+
+var coll = document.getElementsByClassName("open_nav");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "flex") {
+    content.style.display = "none";
+    } else {
+    content.style.display = "flex";
+    }
+});
+}
+    </script>
+</html>

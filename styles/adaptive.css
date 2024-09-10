@@ -1,0 +1,14 @@
+@media (orientation: portrait) or 
+    ((orientation: landscape) and (max-width: 1400px)) {
+    body>main {
+        margin: 0 2rem;
+    }
+
+    body>main #education h4 {
+        margin: 0.8rem 0;
+    }
+
+    body>main #education img {
+        max-height: 3rem;
+    }
+}
